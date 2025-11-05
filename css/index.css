@@ -41,6 +41,7 @@ body {
 }
 .card img {
     border-radius: 1em;
+    width: 70%;
 }
 #refresh-button {
     padding: 0.5em 1em;
@@ -65,4 +66,7 @@ body {
 }
 #load-result.success {
     color: rgb(100, 255, 100);
+}
+.card p {
+    font-size: 1.2em;
 }
