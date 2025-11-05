@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "EB Garamond", serif;
+}
+:root {
+    --bgcol: rgb(64, 0, 128);
+    --fgcol: rgb(223, 166, 190);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bgcol);
+}
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    gap: 2em;
+}
+#card-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    width: 18dvw;
+    height: 50dvh
+}
+.card img {
+    border-radius: 1em;
+}
+#refresh-button {
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: var(--fgcol);
+    color: white;
+    cursor: pointer;
+    transition: 250ms;
+}
+#refresh-button:hover {
+    background-color: rgb(200, 120, 150);
+}
+#load-result {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#load-result.error {
+    color: rgb(255, 100, 100);
+}
+#load-result.success {
+    color: rgb(100, 255, 100);
+}
